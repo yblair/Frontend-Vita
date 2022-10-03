@@ -1,0 +1,17 @@
+
+
+@import "./scss/abstracts/variables.scss";
+
+body {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-image: url('../src/assets/bg-mobile.png');
+  background-repeat: no-repeat; 
+ 
+}
+
+code {
+  font-family:$font-openSans
+}

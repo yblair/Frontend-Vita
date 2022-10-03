@@ -1,0 +1,77 @@
+@import './variables.scss';
+
+.nav-div{
+  width: 100%;
+  background-color: $bg-color;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+ 
+}
+
+.redes-logo{
+  margin: 1rem;
+}
+
+.nav-div-button{
+display: none;
+cursor: pointer;
+background-color: transparent;
+}
+
+.menu-logo{
+background-color: transparent;
+}
+
+
+.nav-ul{
+  display: flex;
+  flex-flow: row;
+  justify-content: flex-end;
+  align-items: center;
+  list-style: none;
+}
+.nav-li{
+  margin: 0.5em;
+  a{
+    color: $text;
+  }
+}
+
+
+@media screen and (max-width:960px){
+  .nav-div-button{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+  .toggle-nav{
+      display: flex;
+      max-width: 100%;
+      height: 0vh;
+      flex-flow: column;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+      opacity: 0;
+      transition: all .5s ease;
+      
+  }
+  
+  .toggle-nav.isactive{
+      opacity: 1;
+      height: 40vh;
+  }
+  .nav-ul{
+      flex-direction: column;
+    
+     
+  }
+  .nav-li{
+      margin: .5em 0;
+      text-decoration: none;
+  
+  }
+}
